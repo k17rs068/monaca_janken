@@ -9,12 +9,28 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="keys.js"></script>
     <script>
-      // じゃんけんのハンド用変数（定数）
-      var hand_gu=0;
-      var hand_choki=1;
-      var hand_pa=2;
+      // トランプ用変数（定数）
+      var c_1 = 0;       var h_1 = 1;      var d_1 = 2;       var s_1 = 3;
+      var c_2 = 4;       var h_2 = 5;      var d_2 = 6;       var s_2 = 7;
+      var c_3 = 8;       var h_3 = 9;      var d_3 = 10;      var s_3 = 11;
+      var c_4 = 12;      var h_4 = 13;     var d_4 = 14;      var s_4 = 15;
+      var c_5 = 16;      var h_5 = 17;     var d_5 = 18;      var s_5 = 19;
+      var c_6 = 20;      var h_6 = 21;     var d_6 = 22;      var s_6 = 23;
+      var c_7 = 24;      var h_7 = 25;     var d_7 = 26;      var s_7 = 27;
+      var c_8 = 28;      var h_8 = 29;     var d_8 = 30;      var s_8 = 31;
+      var c_9 = 32;      var h_9 = 33;     var d_9 = 34;      var s_9 = 35;
+      var c_10 = 36;     var h_10 = 37;    var d_10 = 38;     var s_10 = 39;
+      var c_J = 40;      var h_J = 41;     var d_J = 42;      var s_J = 43;
+      var c_Q = 44;      var h_Q = 45;     var d_Q = 46;      var s_Q = 47;
+      var c_K = 48;      var h_K = 49;     var d_K = 50;      var s_K = 51;
       // ハンド表示用配列
-      var hand_text = ["ぐー", "ちょき", "ぱー"];
+      var hand_text = ["♧1","♡1","♢1","♤1","♧2","♡2","♢2","♤2",
+                       "♧3","♡3","♢3","♤3","♧4","♡4","♢4","♤4",
+                       "♧5","♡5","♢5","♤5","♧6","♡6","♢6","♤6",
+                       "♧7","♡7","♢7","♤7","♧8","♡8","♢8","♤8",
+                       "♧9","♡9","♢9","♤9","♧10","♡10","♢10","♤10",
+                       "♧J","♡J","♢J","♤J","♧Q","♡Q","♢Q","♤Q",
+                       "♧K","♡K" "♢K","♤K",];
       // 勝敗判定用変数（定数）
       var judge_win=0;
       var judge_draw=1;
