@@ -270,6 +270,8 @@
         $("#newgame").css("display", "none");
         $("#result").html("勝負！")
         $("#result2").html("");
+        $("#rule1").html("ボタンを押すと1~Kのいずれかに決定");
+        $("#rule2").html("同じ順番の時は♤→♢→♡→♧の順に強い")
       }
 
       function gameover() {
@@ -315,6 +317,10 @@
     <a onclick="diamond();" class="btn btn-outline-primary hand" role="button">♢</a>
     <a onclick="spade();" class="btn btn-outline-primary hand" role="button">♤</a>
     <a onclick="newgame();" class="btn btn-info text-white" id="newgame" role="button">New Game</a>
+  </div>
+  <div id="rule1" class="text-white bg-secondary">
+  </div>
+  <div id="rule2" class="text-white bg-secondary">
   </div>
   <div id="result" class="text-white bg-secondary">
   </div>
