@@ -109,24 +109,132 @@
       var high_score = 0;
 
       function club() {
-        janken(hand_c);
+        cardpower=Math.random()*13;
+        if(cardpower==0){
+          janken(hand_c1);
+        }else if(cardpower==1){
+          janken(hand_c2);
+        }else if(cardpower==2){
+          janken(hand_c3);
+        }else if(cardpower==3){
+          janken(hand_c4);
+        }else if(cardpower==4){
+          janken(hand_c5);
+        }else if(cardpower==5){
+          janken(hand_c6);
+        }else if(cardpower==6){
+          janken(hand_c7);
+        }else if(cardpower==7){
+          janken(hand_c8);
+        }else if(cardpower==8){
+          janken(hand_c9);
+        }else if(cardpower==9){
+          janken(hand_c10);
+        }else if(cardpower==10){
+          janken(hand_cJ);
+        }else if(cardpower==11){
+          janken(hand_cQ);
+        }else{
+          janken(hand_cK);
+        }
       }
 
       function heart() {
-        janken(hand_h);
+        cardpower=Math.random()*13;
+        if(cardpower==0){
+          janken(hand_h1);
+        }else if(cardpower==1){
+          janken(hand_h2);
+        }else if(cardpower==2){
+          janken(hand_h3);
+        }else if(cardpower==3){
+          janken(hand_h4);
+        }else if(cardpower==4){
+          janken(hand_h5);
+        }else if(cardpower==5){
+          janken(hand_h6);
+        }else if(cardpower==6){
+          janken(hand_h7);
+        }else if(cardpower==7){
+          janken(hand_h8);
+        }else if(cardpower==8){
+          janken(hand_h9);
+        }else if(cardpower==9){
+          janken(hand_h10);
+        }else if(cardpower==10){
+          janken(hand_hJ);
+        }else if(cardpower==11){
+          janken(hand_hQ);
+        }else{
+          janken(hand_hK);
+        }
       }
 
       function diamond() {
-        janken(hand_d);
+         cardpower=Math.random()*13;
+        if(cardpower==0){
+          janken(hand_d1);
+        }else if(cardpower==1){
+          janken(hand_d2);
+        }else if(cardpower==2){
+          janken(hand_d3);
+        }else if(cardpower==3){
+          janken(hand_d4);
+        }else if(cardpower==4){
+          janken(hand_d5);
+        }else if(cardpower==5){
+          janken(hand_d6);
+        }else if(cardpower==6){
+          janken(hand_d7);
+        }else if(cardpower==7){
+          janken(hand_d8);
+        }else if(cardpower==8){
+          janken(hand_d9);
+        }else if(cardpower==9){
+          janken(hand_d10);
+        }else if(cardpower==10){
+          janken(hand_dJ);
+        }else if(cardpower==11){
+          janken(hand_dQ);
+        }else{
+          janken(hand_dK);
+        }
       }
 
       function spade() {
-        janken(hand_s);
+         cardpower=Math.random()*13;
+        if(cardpower==0){
+          janken(hand_s1);
+        }else if(cardpower==1){
+          janken(hand_s2);
+        }else if(cardpower==2){
+          janken(hand_s3);
+        }else if(cardpower==3){
+          janken(hand_s4);
+        }else if(cardpower==4){
+          janken(hand_s5);
+        }else if(cardpower==5){
+          janken(hand_s6);
+        }else if(cardpower==6){
+          janken(hand_s7);
+        }else if(cardpower==7){
+          janken(hand_s8);
+        }else if(cardpower==8){
+          janken(hand_s9);
+        }else if(cardpower==9){
+          janken(hand_s10);
+        }else if(cardpower==10){
+          janken(hand_sJ);
+        }else if(cardpower==11){
+          janken(hand_sQ);
+        }else{
+          janken(hand_sK);
+        }
       }
 
       function janken(player_hand){
         // コンピュータの手を決定
-        comp_hand = Math.floor(Math.random() * 4);
+        comp_hand = Math.floor(Math.random() * 52);
         // 勝敗判定
         result = judge[player_hand][comp_hand];
         // 結果表示
